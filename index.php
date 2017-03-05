@@ -55,6 +55,7 @@
         </p>
 
         <a class="btn waves-effect waves-light modal-trigger join" href="#join-modal">Join our mailing list</a>
+        <a class="btn waves-effect waves-light join" href="mailto:ieee-acm-exec@mit.edu">Contact Us!</a>
       </div>
     </div>
 
