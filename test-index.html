@@ -184,6 +184,7 @@
         {{/each}}
       </script>
 
+      <h5 id="blog-post" class="blog-label">EXECUTIVE BOARD</h5>
       <div id="exec" class="row"></div>
 
     </div>
