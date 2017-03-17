@@ -156,7 +156,7 @@
         {{/each}}
       </script>
 
-      <div id="exec" class="row section">
+      <div id="exec" class="row">
 
       </div>
 
