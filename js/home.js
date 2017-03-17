@@ -26,6 +26,11 @@ $(document).ready(function() {
         {id: 'JacquelineXu', name: 'Jacqueline Xu', position: 'WiEECS Chair', image: 'JacquelineXu_2017_6-3_WomenInEECSChair.jpg'},
     ];
 
+    var execTemplate = $('#exec-template').html();
+    var execHandlebars = Handlebars.compile(execTemplate);
+    var execCards = execHandlebars({officers});
+    $('#exec.row').html(execCards);
+
     // SET UP EVENTS SECTION
     var events = $.grabCalendar({
         type: 'detailedEvents',
@@ -197,9 +202,4 @@ $(document).ready(function() {
                 console.log(responseObject);
             });
     });
-
-    var execTemplate = $('#exec-template').html();
-    var execHandlebars = Handlebars.compile(execTemplate);
-    var execCards = execHandlebars({officers: officers});
-    $('#exec.row').html(execCards);
 });

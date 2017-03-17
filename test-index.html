@@ -55,7 +55,7 @@
         </p>
 
         <a class="btn waves-effect waves-light modal-trigger join" href="#join-modal">Join our mailing list</a>
-        <a class="btn waves-effect waves-light join" href="mailto:ieee-acm-exec@mit.edu">Contact Us!</a>
+        <a class="btn waves-effect waves-light join" href="mailto:ieee-acm-exec@mit.edu">Contact Us</a>
       </div>
     </div>
 
@@ -156,10 +156,9 @@
         {{/each}}
       </script>
 
-      <div id="exec" class="row">
+      <div id="exec" class="row"></div>
 
-      </div>
-
+      <div class="divider hide-on-small-only"></div>
     </div>
 
 
