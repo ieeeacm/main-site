@@ -17,11 +17,11 @@ $(document).ready(function() {
       {id: 'ShramanRayChaudhuri', name: 'Shraman Ray Chaudhuri', position: 'Faculty Chair', image: 'ShramanRayChaudhuri_2017_6-3_FacultyCo-Chair.jpg'},
       {id: 'CarlaPinzon', name: 'Carla Pinzon', position: 'Publicity Chair', image: 'CarlaPinzon_2018_6-1_PubChair.jpg'},
       {id: 'JessicaWang', name: 'Jessica Wang', position: 'Publicity Chair', image: 'JessicaWang_2017_6-3_Publicity Chair.jpg'},
-      {id: 'Anelise Newman', name: 'AneliseNewman', position: 'URGE Chair', image: 'AneliseNewman_2019_6-3_URGEchair.jpg'},
+      {id: 'AneliseNewman', name: 'Anelise Newman', position: 'URGE Chair', image: 'AneliseNewman_2019_6-3_URGEchair.jpg'},
       {id: 'AndrewLuo', name: 'Andrew Luo', position: 'ML Chair', image: 'AndrewLuo_2019_6-3_MLGroup.jpg'},
       {id: 'WeiLow', name: 'Wei Low', position: 'Voltage Chair', image: 'WeiLow_2017_6-2_VoltageChair.jpg'},
-      {id: 'ChunchunWu', name: 'Chunchun Wu', position: '6# Chair', image: 'ChunchunWu_2018_6-2_6#co-chair.jpg'},
-      {id: 'JoseSoto', name: 'Jose Soto', position: '6# Chair', image: 'JoseSoto_2020_6-2_15_6#Co-Chair.jpg'},
+      {id: 'ChunchunWu', name: 'Chunchun Wu', position: '6# Chair', image: 'ChunchunWu_2018_6-2_6Sharpco-chair.jpg'},
+      {id: 'JoseSoto', name: 'Jose Soto', position: '6# Chair', image: 'JoseSoto_2020_6-2_15_6SharpCo-Chair.jpg'},
       {id: 'MinaSun', name: 'Mina Sun', position: 'URTC Chair', image: 'MinaSun_2019_6-2_URTC_Co-chair.jpg'},
       {id: 'JacquelineXu', name: 'Jacqueline Xu', position: 'WiEECS Chair', image: 'JacquelineXu_2017_6-3_WomenInEECSChair.jpg'}
     ];
