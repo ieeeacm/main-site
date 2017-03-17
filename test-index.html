@@ -55,7 +55,7 @@
         </p>
 
         <a class="btn waves-effect waves-light modal-trigger join" href="#join-modal">Join our mailing list</a>
-        <a class="btn waves-effect waves-light join" href="mailto:ieee-acm-exec@mit.edu">Contact Us</a>
+        <a class="btn waves-effect waves-light join" href="mailto:ieee-acm-exec@mit.edu">Contact Us!</a>
       </div>
     </div>
 
@@ -140,6 +140,34 @@
 
     <div class="divider hide-on-small-only"></div>
 
+
+    <div class="row section">
+      <div class="col s12 m8 l8" id="blog-post">
+        <h5 class="blog-label">LATEST BLOG POST</h5>
+        <div class="divider col s12 hide-on-med-and-up post-section-divider"></div>
+        <?php
+          $template = "Home";
+          $number = "1";
+          $PHP_SELF = "post.php";
+          $only_active = TRUE;
+          include("blog/show_news.php");
+        ?>
+      </div>
+      <div class="recent-posts col s12 m4 l4">
+        <h6 class="blog-label">OTHER RECENT POSTS</h6>
+        <?php
+          $template = "Headlines";
+          $number = "4";
+          $start_from = 1;
+          $PHP_SELF = "post.php";
+          $only_active = TRUE;
+          include("blog/show_news.php");
+        ?>
+        <h6 class="right all-posts"><a href="blog.php" class="valign-wrapper">All Posts<i class="material-icons valign">arrow_forward</i></a></h6>
+      </div>
+      <div class="divider col s12 hide-on-small-only"></div>
+    </div>
+
     <script id="exec-template" type="text/x-handlebars-template">
       {{#each officers}}
       <div class="col l3 m4 s6">
@@ -158,7 +186,6 @@
 
       <div id="exec" class="row"></div>
 
-      <div class="divider hide-on-small-only"></div>
     </div>
 
 
