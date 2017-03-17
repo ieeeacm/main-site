@@ -21,7 +21,7 @@ $(document).ready(function() {
       {id: 'AndrewLuo', name: 'Andrew Luo', position: 'ML Chair', image: 'AndrewLuo_2019_6-3_MLGroup.jpg'},
       {id: 'WeiLow', name: 'Wei Low', position: 'Voltage Chair', image: 'WeiLow_2017_6-2_VoltageChair.jpg'},
       {id: 'ChunchunWu', name: 'Chunchun Wu', position: '6# Chair', image: 'ChunchunWu_2018_6-2_6Sharpco-chair.jpg'},
-      {id: 'JoseSoto', name: 'Jose Soto', position: '6# Chair', image: 'JoseSoto_2020_6-2_15_6SharpCo-Chair.jpg'},
+      {id: 'JoseSoto', name: 'Jose Soto', position: '6# Chair', image: 'JoseSoto_2020_6-2_15_6SHarpCo-Chair.jpg'},
       {id: 'MinaSun', name: 'Mina Sun', position: 'URTC Chair', image: 'MinaSun_2019_6-2_URTC_Co-chair.jpg'},
       {id: 'JacquelineXu', name: 'Jacqueline Xu', position: 'WiEECS Chair', image: 'JacquelineXu_2017_6-3_WomenInEECSChair.jpg'}
     ];
