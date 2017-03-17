@@ -200,6 +200,6 @@ $(document).ready(function() {
 
     var execTemplate = $('#exec-template').html();
     var execHandlebars = Handlebars.compile(execTemplate);
-    var execCards = execHandlebars({officers: officers});
+    var execCards = execHandlebars(officers);
     $('#exec').html(execCards);
 });
