@@ -8,14 +8,22 @@ $(document).ready(function() {
     calendarid = 'ncvkteq0hm7cgr5bhi00bgbaik@group.calendar.google.com';
 
     var officers = [
-        {id: 'kng', name: 'Kevin Ng', position: 'President', image: 'kng.jpg'},
-        {id: 'cwomack', name: 'Chris Womack', position: 'Vice President', image: 'cwomack.jpg'},
-        {id: 'pzhao', name: 'Parker Zhao', position: 'Advisor', image: 'pzhao.jpg'},
-        {id: 'clao', name: 'Czarina Lao', position: 'Treasurer', image: 'clao.jpg'},
-        {id: 'asaxena', name: 'Alisha Saxena', position: 'Secretary', image: 'asaxena.jpg'},
-        {id: 'schen', name: 'Shirley Chen', position: 'Social Chair', image: 'schen.jpg'},
-        {id: 'kikhofua', name: 'Kamoya Ikhofua', position: 'Publicity Chair', image: 'kikhofua.jpg'},
-        {id: 'lchen', name: 'Lucy Chen', position: 'Publicity Chair', image: 'lchen.jpg'}
+        {id: 'AlishaSaxena', name: 'Alisha Saxena', position: 'President', image: 'AlishaSaxena_2018_6-2_President.jpg'},
+        {id: 'CzarinaLao', name: 'Czarina Lao', position: 'Vice President', image: 'CzarinaLao_2018_6-3_VP.jpg'},
+        {id: 'AdelaideOh', name: 'Adelaide Oh', position: 'Secretary', image: 'AdelaideOh_2020_6-3and17_Secretary.jpg'},
+        {id: 'MartinWinton', name: 'Martin Winton', position: 'Treasurer', image: 'MartinWinton_2020_6-2_Treasurer.jpg'},
+        {id: 'SylvieLee', name: 'Sylvie Lee', position: 'Social Chair', image: 'SylvieLee_2019_6-2_Social.jpg'},
+        {id: 'KaiAichholz', name: 'Kai Aichholz', position: 'Faculty Chair', image: 'KaiAichholz_2017_6-2_FacultyCo-Chair.jpg'},
+        {id: 'ShramanRayChaudhuri', name: 'Shraman Ray Chaudhuri', position: 'Faculty Chair', image: 'ShramanRayChaudhuri_2017_6-3_FacultyCo-Chair.jpg'},
+        {id: 'CarlaPinzon', name: 'Carla Pinzon', position: 'Publicity Chair', image: 'CarlaPinzon_2018_6-1_PubChair.jpg'},
+        {id: 'JessicaWang', name: 'Jessica Wang', position: 'Publicity Chair', image: 'JessicaWang_2017_6-3_Publicity Chair.jpg'}
+        {id: 'Anelise Newman', name: 'AneliseNewman', position: 'URGE Chair', image: 'AneliseNewman_2019_6-3_URGEchair.jpg'},
+        {id: 'AndrewLuo', name: 'Andrew Luo', position: 'ML Chair', image: 'AndrewLuo_2019_6-3_MLGroup.jpg'},
+        {id: 'WeiLow', name: 'Wei Low', position: 'Voltage Chair', image: 'WeiLow_2017_6-2_VoltageChair.jpg'},
+        {id: 'ChunchunWu', name: 'Chunchun Wu', position: '6# Chair', image: 'ChunchunWu_2018_6-2_6#co-chair.jpg'},
+        {id: 'JoseSoto', name: 'Jose Soto', position: '6# Chair', image: 'JoseSoto_2020_6-2_15_6#Co-Chair.jpg'},
+        {id: 'MinaSun', name: 'Mina Sun', position: 'URTC Chair', image: 'MinaSun_2019_6-2_URTC_Co-chair.jpg'},
+        {id: 'JacquelineXu', name: 'Jacqueline Xu', position: 'WiEECS Chair', image: 'JacquelineXu_2017_6-3_WomenInEECSChair.jpg'},
     ];
 
     // SET UP EVENTS SECTION
@@ -193,5 +201,5 @@ $(document).ready(function() {
     var execTemplate = $('#exec-template').html();
     var execHandlebars = Handlebars.compile(execTemplate);
     var execCards = execHandlebars({officers: officers});
-    //$('#exec.row').html(execCards);
+    $('#exec').html(execCards);
 });

@@ -28,18 +28,18 @@
 </head>
 
 <body>
-	
+
 	<!-- Header -->
   <nav class="z-depth-0">
     <div class="nav-wrapper">
-      <a href="/club/" class="brand-logo"><img class="logo hide-on-med-and-down" src="images/logo-white.png"></a>
+      <a href="/" class="brand-logo"><img class="logo hide-on-med-and-down" src="images/logo-white.png"></a>
       <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="/club/">HOME</a></li>
+        <li><a href="/">HOME</a></li>
         <li><a href="blog.php">BLOG</a></li>
       </ul>
       <ul class="side-nav" id="mobile-nav">
-        <li><a href="/club/">HOME</a></li>
+        <li><a href="/">HOME</a></li>
         <li><a href="blog.php">BLOG</a></li>
       </ul>
     </div>
@@ -55,6 +55,7 @@
         </p>
 
         <a class="btn waves-effect waves-light modal-trigger join" href="#join-modal">Join our mailing list</a>
+        <a class="btn waves-effect waves-light join" href="mailto:ieee-acm-exec@mit.edu">Contact Us!</a>
       </div>
     </div>
 
@@ -106,7 +107,7 @@
           <ul class="programs-list collapsible z-depth-0" data-collapsible="accordion">
             <li>
               <div class="collapsible-header">6#</div>
-              <div class="collapsible-body"><p>Six Sharp aims to provide the best hands-on technical interview preparation for students through mock interviews.</p></div>
+              <div class="collapsible-body"><p><a href="https://sixsharp.mit.edu">Six Sharp</a> aims to provide the best hands-on technical interview preparation for students through mock interviews.</p></div>
             </li>
             <!--<li>-->
             <!--<div class="collapsible-header">6-7 Students Assocation (SSSA)</div>-->
@@ -114,23 +115,23 @@
             <!--</li>-->
             <li>
               <div class="collapsible-header">Faculty Dinners</div>
-              <div class="collapsible-body"><p>The Faculty Chair organizes monthly small group dinners featuring a Course 6 professor and 10-20 undergraduates to strengthen the student-faculty bond.</p></div>
+              <div class="collapsible-body"><p>The <a href="mailto:ieee-acm-faculty@mit.edu">Faculty Chair</a> organizes monthly small group dinners featuring a Course 6 professor and 10-20 undergraduates to strengthen the student-faculty bond.</p></div>
             </li>
             <li>
               <div class="collapsible-header">URTC</div>
-              <div class="collapsible-body"><p>The IEEE MIT Undergraduate Research Technology Conference is an official IEEE conference held in the fall that provides student participants an opportunity to publish papers about their independent innovations, projects, research, or case studies.</p></div>
+              <div class="collapsible-body"><p>The <a href="http://ieee.scripts.mit.edu/conference/">IEEE MIT Undergraduate Research Technology Conference</a> is an official IEEE conference held in the fall that provides student participants an opportunity to publish papers about their independent innovations, projects, research, or case studies.</p></div>
             </li>
             <li>
               <div class="collapsible-header">Social Hours</div>
-              <div class="collapsible-body"><p>The Social Chairs organize frequent study breaks for undergraduates in the EECS lounge.</p></div>
+              <div class="collapsible-body"><p>The <a href="mailto:ieee-acm-social@mit.edu">Social Chairs</a> organize frequent study breaks for undergraduates in the EECS lounge.</p></div>
             </li>
             <li>
               <div class="collapsible-header">URGE</div>
-              <div class="collapsible-body"><p>URGE is comprised of autonomous reading groups of 9-15 people on specialized topics within computer science.</p></div>
+              <div class="collapsible-body"><p><a href="mailto:ieee-acm-urge@mit.edu">URGE</a> is comprised of autonomous reading groups of 9-15 people on specialized topics within computer science.</p></div>
             </li>
             <li>
               <div class="collapsible-header">Voltage</div>
-              <div class="collapsible-body"><p>The goal of Voltage is to build a stronger, cohesive 6-1 undergraduate student community by facilitating student, faculty, alumni interaction.</p></div>
+              <div class="collapsible-body"><p>The goal of <a href="http://voltage.scripts.mit.edu/voltage-expo/Voltage.html">Voltage</a> is to build a stronger, cohesive 6-1 undergraduate student community by facilitating student, faculty, alumni interaction.</p></div>
             </li>
           </ul>
         </div>
@@ -138,19 +139,6 @@
     </div>
 
     <div class="divider hide-on-small-only"></div>
-
-      
-    <div class="row section">
-      <div class="col s12 m8 l8" id="blog-post">
-        <h5 class="blog-label">LATEST BLOG POST</h5>
-        <div class="divider col s12 hide-on-med-and-up post-section-divider"></div>
-      </div>
-      <div class="recent-posts col s12 m4 l4">
-        <h6 class="blog-label">OTHER RECENT POSTS</h6>
-        <h6 class="right all-posts"><a href="blog.php" class="valign-wrapper">All Posts<i class="material-icons valign">arrow_forward</i></a></h6>
-      </div>
-      <div class="divider col s12 hide-on-small-only"></div>
-    </div>
 
     <script id="exec-template" type="text/x-handlebars-template">
       {{#each officers}}
@@ -168,7 +156,9 @@
         {{/each}}
       </script>
 
-      <div id="exec" class="row"></div>
+      <div id="exec" class="row section">
+
+      </div>
 
     </div>
 
@@ -208,7 +198,7 @@
                 <input type="email" id="email" name="email">
                 <label for="email">MIT Email</label>
               </div>
-            </div> 
+            </div>
           </form>
         </div>
       </div><!-- /.modal-content -->
