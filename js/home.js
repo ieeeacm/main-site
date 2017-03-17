@@ -7,7 +7,7 @@ $(document).ready(function() {
     mykey = 'AIzaSyAfIu2iaqycS3gfXYl1aMjBNQ4CyHvSlqo';
     calendarid = 'ncvkteq0hm7cgr5bhi00bgbaik@group.calendar.google.com';
 
-    var officers = [
+    var exec = [
         {id: 'AlishaSaxena', name: 'Alisha Saxena', position: 'President', image: 'AlishaSaxena_2018_6-2_President.jpg'},
         {id: 'CzarinaLao', name: 'Czarina Lao', position: 'Vice President', image: 'CzarinaLao_2018_6-3_VP.jpg'},
         {id: 'AdelaideOh', name: 'Adelaide Oh', position: 'Secretary', image: 'AdelaideOh_2020_6-3and17_Secretary.jpg'},
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     var execTemplate = $('#exec-template').html();
     var execHandlebars = Handlebars.compile(execTemplate);
-    var execCards = execHandlebars({officers});
+    var execCards = execHandlebars({exec: officers});
     $('#exec.row').html(execCards);
 
     // SET UP EVENTS SECTION
