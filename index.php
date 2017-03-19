@@ -36,11 +36,11 @@
       <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="/">HOME</a></li>
-        <li><a href="blog.php">BLOG</a></li>
+        <li><a href="https://medium.com/mit-ieee-acm">BLOG</a></li>
       </ul>
       <ul class="side-nav" id="mobile-nav">
         <li><a href="/">HOME</a></li>
-        <li><a href="blog.php">BLOG</a></li>
+        <li><a href="https://medium.com/mit-ieee-acm">BLOG</a></li>
       </ul>
     </div>
   </nav>
@@ -141,32 +141,7 @@
     <div class="divider hide-on-small-only"></div>
 
 
-    <div class="row section">
-      <div class="col s12 m8 l8" id="blog-post">
-        <h5 class="blog-label">LATEST BLOG POST</h5>
-        <div class="divider col s12 hide-on-med-and-up post-section-divider"></div>
-        <?php
-          $template = "Home";
-          $number = "1";
-          $PHP_SELF = "post.php";
-          $only_active = TRUE;
-          include("blog/show_news.php");
-        ?>
-      </div>
-      <div class="recent-posts col s12 m4 l4">
-        <h6 class="blog-label">OTHER RECENT POSTS</h6>
-        <?php
-          $template = "Headlines";
-          $number = "4";
-          $start_from = 1;
-          $PHP_SELF = "post.php";
-          $only_active = TRUE;
-          include("blog/show_news.php");
-        ?>
-        <h6 class="right all-posts"><a href="blog.php" class="valign-wrapper">All Posts<i class="material-icons valign">arrow_forward</i></a></h6>
-      </div>
-      <div class="divider col s12 hide-on-small-only"></div>
-    </div>
+
 
     <script id="exec-template" type="text/x-handlebars-template">
       {{#each officers}}
