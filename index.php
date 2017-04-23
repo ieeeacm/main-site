@@ -133,6 +133,10 @@
               <div class="collapsible-header">Voltage</div>
               <div class="collapsible-body"><p>The goal of <a href="http://voltage.scripts.mit.edu/voltage-expo/Voltage.html">Voltage</a> is to build a stronger, cohesive 6-1 undergraduate student community by facilitating student, faculty, alumni interaction.</p></div>
             </li>
+            <li>
+              <div class="collapsible-header">Women in EECS</div>
+              <div class="collapsible-body"><p><a href="http://womenineecs.mit.edu/">Women in EECS</a> (WiEECS) is an undergraduate organization of women studying EECS at MIT. Our mission is to build a community for women in EECS that supports, encourages, and empowers them to succeed.</p></div>
+            </li>
           </ul>
         </div>
       </div>
@@ -168,11 +172,11 @@
       <div class="divider col s12 hide-on-small-only"></div>
     </div>
 
- 
+
 
       <h5 id="blog-post" class="blog-label">EXECUTIVE BOARD</h5>
       <div id="exec" class="row">
-        
+
 
 
    <script id="exec-template" type="text/x-handlebars-template">
@@ -196,7 +200,7 @@
       </div>
 
 
-       
+
 
     </div>
 
