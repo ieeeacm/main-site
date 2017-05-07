@@ -142,9 +142,9 @@
       </div>
     </div>
 
-    <div class="divider hide-on-small-only"></div>
+    <h6 class="programs-label">EXECUTIVE BOARD</h6>
+    <div class="divider"></div>
 
-    <h5 id="blog-post" class="blog-label">EXECUTIVE BOARD</h5>
     <div id="exec" class="row">
       <script id="exec-template" type="text/x-handlebars-template">
         {{#each officers}}
