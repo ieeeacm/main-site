@@ -23,7 +23,6 @@
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script src="js/handlebars-v4.0.5.js"></script>
   <script src="js/ieee.js" type="text/javascript"></script>
-  <script src="execpics/home.js" type="text/javascript"></script>
   <script src="js/home.js" type="text/javascript"></script>
 
 </head>
