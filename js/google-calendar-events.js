@@ -16,8 +16,9 @@ function ISODateString(d) {
 function adjustDate(iso_date, is_date_time) {
   MM = {Jan:"January", Feb:"February", Mar:"March", Apr:"April", May:"May", Jun:"June", Jul:"July", Aug:"August", Sep:"September", Oct:"October", Nov:"November", Dec:"December"};
   DD = {Sun:"Sunday", Mon:"Monday", Tue:"Tuesday", Wed:"Wednesday", Thu:"Thursday", Fri:"Friday", Sat:"Saturday"};
-
+  console.log(iso_date);
   proper_date = String(new Date(iso_date)).split(" ");
+  console.log("processing: " + proper_date);
 
   correct_formatting = DD[proper_date[0]] + " " + MM[proper_date[1]] + " " + proper_date[2] + ", " + proper_date[3] + " - ";
 
