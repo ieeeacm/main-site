@@ -31,10 +31,10 @@ $(document).ready(function() {
      var events = $.grabCalendar({
           type: 'detailedEvents',
           maxEvents: 15,
-          clean_date: true,
+          clean_date: false,
           upcoming: true
       });
-
+     console.log(events);
       // Format event data for use later
      events.map(function(event) {
          var start = event.start.dateTime.split(' '),
