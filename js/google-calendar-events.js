@@ -16,14 +16,14 @@ function ISODateString(d) {
 function adjustDate(iso_date, is_date_time) {
   MM = {Jan:"January", Feb:"February", Mar:"March", Apr:"April", May:"May", Jun:"June", Jul:"July", Aug:"August", Sep:"September", Oct:"October", Nov:"November", Dec:"December"};
   DD = {Sun:"Sunday", Mon:"Monday", Tue:"Tuesday", Wed:"Wednesday", Thu:"Thursday", Fri:"Friday", Sat:"Saturday"};
-  console.log(iso_date);
-  proper_date = String(new Date(iso_date)).split(" ");
-  console.log("processing: " + proper_date);
 
-  correct_formatting = DD[proper_date[0]] + " " + MM[proper_date[1]] + " " + proper_date[2] + ", " + proper_date[3] + " - ";
+  var proper_date = String(new Date(iso_date)).split(" ");
+
+  var correct_formatting = DD[proper_date[0]] + " " + MM[proper_date[1]] + " " + proper_date[2] + ", " + proper_date[3] + " - ";
 
   if (is_date_time) {
-    clock_time = proper_date[4].substring(0, proper_date[4].length - 3);
+    // remove the seconds part e.g. :00
+    var clock_time = proper_date[4].substring(0, proper_date[4].length - 3);
 
     // the logic for printing the date in a nice fashion is a little verbose...
     // definitely get in a pull request if you can trim this down. regex would be great <3
@@ -101,6 +101,7 @@ function adjustDate(iso_date, is_date_time) {
               response.items[i].end.date = adjustDate(response.items[i].end.date, false);
               response.items[i].start.date = adjustDate(response.items[i].start.date, false);
             }
+            // TODO: what to do for multi-day events? we currently just display them with the start date 
           }
         }
 
