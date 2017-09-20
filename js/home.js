@@ -31,34 +31,61 @@ $(document).ready(function() {
      var events = $.grabCalendar({
           type: 'detailedEvents',
           maxEvents: 15,
-          clean_date: false,
+          clean_date: true,
           upcoming: true
       });
      console.log(events);
       // Format event data for use later
      events.map(function(event) {
-         var start = event.start.dateTime.split(' '),
-             end = event.end.dateTime.split(' '),
-             month, day, startTime, timeSuffix, endTime, time;
-
-         month = start[1].substring(0, 3);
-         day = start[2].substring(0, 2);
-
-         startTime = start[5] + " " + start[6];
-         timeSuffix = new RegExp(" " + end[6], 'g');
-         startTime = startTime.replace(timeSuffix, ""); // if they have the same suffix, remove the first occurrence
-         endTime = end[5] + " " + end[6];
-         time = startTime + "-" + endTime;
-
-         event['month'] = month;
-         event['day'] = day;
-         event['time'] = time.replace(/:00/g, "");
-
-         if(!event.location) {
+        if(!event.location) {
              event.location = 'TBA';
-         }
+        }
 
-         return event;
+        // fix date and time
+        var start, end, month, day, startTime, timeSuffix, endTime, time;
+        var hasStartTime = false, hasEndTime = false;
+
+        if (event.start.dateTime) {
+            start = event.start.dateTime.split(' ');
+            hasStartTime = true;
+        } else if (event.start.date) {
+            start = event.start.date.split(' ');
+        } else {
+            console.log("Could not get start time for event");
+            // stop processing event and go to next
+            return event;
+        }
+
+        if (event.end.dateTime) {
+            end = event.end.dateTime.split(' ');
+            hasEndTime = true;
+        } else if (event.end.date) {
+            end = event.end.date.split(' ');
+        } else {
+            console.log("Could not get end time for event");
+            // stop processing event and go to next
+            return event;
+        }
+
+        month = start[1].substring(0, 3);
+        day = start[2].substring(0, 2);
+
+        if (hasStartTime && hasEndTime) {
+            startTime = start[5] + " " + start[6];
+            timeSuffix = new RegExp(" " + end[6], 'g');
+            startTime = startTime.replace(timeSuffix, ""); // if they have the same suffix, remove the first occurrence
+            endTime = end[5] + " " + end[6];
+            time = startTime + "-" + endTime;
+            time = time.replace(/:00/g, "");
+        } else {
+            time = "all-day";
+        }
+
+        event['month'] = month;
+        event['day'] = day;
+        event['time'] = time;
+
+        return event;
      });
 
      // Split into sections of 5 events
