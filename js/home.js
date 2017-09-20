@@ -32,7 +32,7 @@ $(document).ready(function() {
           type: 'detailedEvents',
           maxEvents: 15,
           clean_date: true,
-          upcoming: false
+          upcoming: true
       });
 
       // Format event data for use later
