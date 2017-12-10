@@ -36,10 +36,12 @@
       <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="/">HOME</a></li>
+        <li><a href="exec.php">EXEC</a></li>
         <li><a href="https://medium.com/mit-ieee-acm ">BLOG</a></li>
       </ul>
       <ul class="side-nav" id="mobile-nav">
         <li><a href="/">HOME</a></li>
+        <li><a href="exec.php">EXEC</a></li>
         <li><a href="https://medium.com/mit-ieee-acm">BLOG</a></li>
       </ul>
     </div>
@@ -140,27 +142,6 @@
           </ul>
         </div>
       </div>
-    </div>
-
-    <h6 class="programs-label">EXECUTIVE BOARD</h6>
-    <div class="divider"></div>
-
-    <div id="exec" class="row">
-      <script id="exec-template" type="text/x-handlebars-template">
-        {{#each officers}}
-        <div class="col l3 m4 s6">
-          <div class="card" id="{{this.id}}">
-            <div class="card-image">
-              <img src='images/exec/{{this.image}}'>
-            </div>
-            <div class="card-content">
-              <p class="exec-name flow-text">{{this.name}}</p>
-                <p class="exec-title">{{this.position}}</p>
-              </div>
-            </div>
-          </div>
-          {{/each}}
-      </script>
     </div>
 
   </div>
